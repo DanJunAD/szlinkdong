@@ -4,41 +4,29 @@
     :class="{'scroll-header': hasScrolled, 'common-header': !hasScrolled}"
   >
     <el-menu
-      default-active="/home"
       class="custom-menu"
       mode="horizontal"
+      :default-active="getCurrentPath"
       router
     >
       <el-menu-item index="/home">首页</el-menu-item>
-      <el-menu-item index="/about/introduction">
-        <el-dropdown trigger="click">
-          <span class="dropdown-menu">关于凌动</span>
-          <el-dropdown-menu slot="dropdown">
-            <el-menu-item index="/about/introduction">公司简介</el-menu-item>
-            <el-menu-item index="/about/culture">企业文化</el-menu-item>
-            <el-menu-item index="/about/partner">合作伙伴</el-menu-item>
-          </el-dropdown-menu>
-        </el-dropdown>
-      </el-menu-item>
-      <el-menu-item index="/product">
-        <el-dropdown>
-          <span class="dropdown-menu">产品中心</span>
-          <el-dropdown-menu slot="dropdown">
-            <el-menu-item index="/product/tekcgq">图尔克传感器</el-menu-item>
-            <el-menu-item index="/product/sfyj">伺服压机</el-menu-item>
-            <el-menu-item index="/product/RFIDdzbq">RFID电子标签</el-menu-item>
-          </el-dropdown-menu>
-        </el-dropdown>
-      </el-menu-item>
+      <el-submenu index="/about">
+        <template slot="title">关于凌动</template>
+        <el-menu-item index="/about/introduction">公司简介</el-menu-item>
+        <el-menu-item index="/about/culture">企业文化</el-menu-item>
+        <el-menu-item index="/about/partner">合作伙伴</el-menu-item>
+      </el-submenu>
+      <el-submenu index="/product">
+        <template slot="title">产品中心</template>
+        <el-menu-item index="/product/tekcgq">图尔克传感器</el-menu-item>
+        <el-menu-item index="/product/sfyj">伺服压机</el-menu-item>
+        <el-menu-item index="/product/RFIDdzbq">RFID电子标签</el-menu-item>
+      </el-submenu>
       <el-menu-item index="/case">案例展示</el-menu-item>
-      <el-menu-item index="/news">
-        <el-dropdown>
-          <span class="dropdown-menu">新闻资讯</span>
-          <el-dropdown-menu slot="dropdown">
-            <el-menu-item index="/news/company">公司新闻</el-menu-item>
-          </el-dropdown-menu>
-        </el-dropdown>
-      </el-menu-item>
+      <el-submenu index="/news">
+        <template slot="title">新闻资讯</template>
+        <el-menu-item index="/news/company">公司新闻</el-menu-item>
+      </el-submenu>
       <el-menu-item index="/contact">联系我们</el-menu-item>
     </el-menu>
   </div>
@@ -48,6 +36,11 @@ export default {
   data() {
     return {
       hasScrolled: false,
+    }
+  },
+  computed: {
+    getCurrentPath () {
+      return location.pathname;
     }
   },
   mounted() {
@@ -74,21 +67,22 @@ export default {
   right: 0;
   height: 60px;
   z-index: 99;
+  padding: 0 20px;
 }
 .common-header {
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-name: hideBackground;
-  .el-menu-item, .el-dropdown {
-    color: #ddd;
+  .el-menu-item, /deep/ .el-submenu__title {
+    color: #ddd!important;
   }
 }
 .scroll-header {
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-name: showBackground;
-  .el-menu-item, .el-dropdown {
-    color: #222;
+  .el-menu-item, /deep/ .el-submenu__title {
+    color: #222!important;
   }
 }
 @keyframes showBackground {
@@ -109,23 +103,22 @@ export default {
   align-items: center;
   border-bottom: none!important;
   .is-active {
+    /deep/ .el-submenu__title {
+      border-bottom: none!important;
+      color: #be3216!important;
+    }
     border-bottom: none!important;
     color: #be3216!important;
   }
-  .el-menu-item, .dropdown-menu {
+  .el-menu-item, /deep/ .el-submenu__title {
     border-bottom: none!important;
-    display: flex;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 16px!important;
+    font-weight: 500!important;
     &:hover, &:focus {
       background-color: rgba(0,0,0,0)!important;
       background: none;
       color: #be3216!important;
     }
   }
-}
-.el-dropdown-menu li {
-  height: 36px;
-  line-height: 36px;
 }
 </style>
