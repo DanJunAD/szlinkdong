@@ -60,24 +60,13 @@
         </div>
       </div>
     </div>
-    <div class="footer-content">
-      <div class="container">
-        <h2>联系我们</h2>
-        <p>苏州凌光自动化科技有限公司</p>
-        <p>邮编：215000</p>
-        <p>手机：18015414418</p>
-        <p>邮箱：alvin.yin@linkguang.com</p>
-        <p>联系人：尹先生</p>
-        <p>地址：苏州工业园区汀兰巷183号</p>
-        <p>© 2020-2023 苏州凌光 备案号：苏ICP备2021054256号</p>
-        <p>苏州凌光自动化科技有限公司</p>
-      </div>
-    </div>
+    <Footer />
   </div>
 </template>
 
 <script>
 import SlideHeader from '../components/SlideHeader.vue';
+import Footer from '../components/Footer.vue';
 import ProductionCards from '../components/ProductionCards.vue';
 import AboutUsImg from '@/assets/about-us.jpg';
 import HomeCaseImg from '@/assets/home-case.jpg';
@@ -86,6 +75,7 @@ export default {
   components: {
     SlideHeader,
     ProductionCards,
+    Footer,
   },
   data() {
     return {
@@ -336,31 +326,6 @@ export default {
           line-height: 25px;
           margin-top: 10px;
         }
-      }
-    }
-  }
-  .footer-content {
-    width: 100%;
-    background-image: url(../assets/footer-bg.jpg);
-    background-repeat: repeat-y;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 60px 0;
-    margin-top: 60px;
-    .container {
-      max-width: 720px;
-      padding: 0 30px;
-      margin: auto;
-      color: #fff;
-      h2 {
-        font-size: 16px;
-        font-weight: 600;
-        margin-bottom: 30px;
-      }
-      p {
-        font-size: 14px;
-        line-height: 35px;
       }
     }
   }
