@@ -47,13 +47,9 @@ export default {
   },
   computed: {
     getCurrentList () {
-      console.log(11111, this.productionType);
       const name = `${this.productionType}_list`;
       return this[name];
     }
-  },
-  methods: {
-    
   },
 }
 </script>

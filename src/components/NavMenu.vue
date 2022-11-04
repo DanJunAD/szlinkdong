@@ -6,15 +6,15 @@
     <el-menu
       class="custom-menu"
       mode="horizontal"
-      :default-active="getCurrentPath"
+      :default-active="currentPath"
       router
     >
       <el-menu-item index="/home">首页</el-menu-item>
       <el-submenu index="/about">
         <template slot="title">关于凌动</template>
-        <el-menu-item index="/about/introduction">公司简介</el-menu-item>
-        <el-menu-item index="/about/culture">企业文化</el-menu-item>
-        <el-menu-item index="/about/partner">合作伙伴</el-menu-item>
+        <el-menu-item index="/about#introduction">公司简介</el-menu-item>
+        <el-menu-item index="/about#culture">企业文化</el-menu-item>
+        <el-menu-item index="/about#partner">合作伙伴</el-menu-item>
       </el-submenu>
       <el-submenu index="/product">
         <template slot="title">产品中心</template>
@@ -36,11 +36,16 @@ export default {
   data() {
     return {
       hasScrolled: false,
+      currentPath: '',
     }
   },
-  computed: {
-    getCurrentPath () {
-      return location.pathname;
+  watch: {
+    $route: {
+      handler: function(val) {
+        this.currentPath = val.fullPath;
+      },
+      deep: true,
+      immediate: true,
     }
   },
   mounted() {
@@ -50,9 +55,6 @@ export default {
     window.removeEventListener("scroll", this.onScroll)
   },
   methods: {
-    handleSelect(val) {
-      console.log(1111, val);
-    },
     onScroll(e) {
     this.hasScrolled = !!window.top.scrollY;
     }
@@ -67,7 +69,7 @@ export default {
   right: 0;
   height: 60px;
   z-index: 99;
-  padding: 0 20px;
+  padding: 0 60px;
 }
 .common-header {
   animation-duration: 1s;
