@@ -42,6 +42,7 @@ export default {
 .about-page-content {
   .header-img-content {
     position: relative;
+    display: flex;
     .header-img {
       width: 100%;
     }
@@ -53,7 +54,7 @@ export default {
       animation-duration: 1s;
       animation-fill-mode: both;
       animation-name: fadeInBottom;
-      animation-delay: 0.7s;
+      animation-delay: 0.5s;
       h2 {
         font-size: 30px;
         font-weight: 400;
@@ -69,6 +70,14 @@ export default {
         color: #ffffff;
       }
     }
+  }
+  .custom-nav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
   }
 }
 @keyframes fadeInBottom {
