@@ -36,7 +36,7 @@
 
 <script>
 import ImgHeader from '../components/ImgHeader.vue';
-import IntroductionImg from '@/assets/about-us';
+import IntroductionImg from '@/assets/about-us.jpg';
 import Footer from '../components/Footer.vue';
 
 export default {
