@@ -21,12 +21,29 @@
       <img :src="introductionImg" />
       <div class="content">
         <h2>苏州凌光自动化科技有限公司</h2>
-        <div>
+        <div class="txt">
           苏州凌光自动化科技有限公司成立于2018年，坐落于美丽的苏州工业园区，是一家专业提供图尔克传感器、伺服压机、RFID电子标签等产品的一站式采购和技术支持的供应商。
           <br />
           公司的优势在于“货源直接，库存充足，价格合理”，并向广大客户承诺只提供全新原装正品。产品应用领域涵盖：电源管理，工业通信，安防，消防火灾，仪器仪表，医疗电源，工业控制器，电力自动化及汽车电子等领域。
           <br/>
           公司秉承“诚信，专业，持续发展”的经营理念和“一流品质，一流服务”的发展方针！赢得了广大客户的高度信任和大力支持!
+        </div>
+      </div>
+    </div>
+    <div class="about-culture">
+      <div class="content">
+        <div class="title">
+          <h2>关于我们</h2>
+          <h3><span></span>ABOUT US<span></span></h3>
+        </div>
+        <div class="about-main-content">
+          <div class="text-content">
+            <h2>苏州凌光自动化科技有限公司</h2>
+            <div class="txt">苏州凌光自动化科技有限公司成立于2018年，坐落于美丽的苏州工业园区，是一家专业提供图尔克传感器、伺服压机、RFID电子标签等产品的一站式采购和技术支持的供应商。 公司的优势在于货源直接，库存充足，价格合理，并向广大客户承诺只提供全新原装正品。产品应用领域涵盖：电源管理，工业通信... </div>
+          </div>
+          <div class="img-content">
+            <img :src="aboutUsImg" />
+          </div>
         </div>
       </div>
     </div>
@@ -99,6 +116,65 @@ export default {
       &.is-active {
         color: #fff;
         background-color: #1d428e;
+      }
+    }
+  }
+  .about-introduction {
+    margin: 60px auto;
+    max-width: 1140px;
+    height: 438px;
+    display: flex;
+    padding: 0 25px;
+    img {
+      object-fit: cover;
+      width: 400px;
+    }
+    .content {
+      flex: 1 1;
+      background-color: #f1f1f1;
+      padding: 30px;
+      h2 {
+        font-size: 30px;
+        line-height: 35px;
+        padding: 0 20px;
+        color: #292929;
+        border-left: 4px solid #1d428e;
+      }
+      .txt {
+        font-size: 14px;
+        line-height: 28px;
+        margin-top: 30px;
+        font-weight: 500;
+        color: #212529;
+      }
+    }
+  }
+  .about-culture {
+    margin: 60px auto;
+    max-width: 1140px;
+    padding: 0 25px;
+    .content {
+      height: 100px;
+      background-color: #f1f1f1;
+      .title {
+        text-align: center;
+        h2 {
+          color: #5c5c5b;
+          font-size: 30px;
+          line-height: 50px;
+        }
+        h3 {
+          color: #be3216;
+          font-size: 18px;
+          line-height: 35px;
+          span {
+            height: 1px;
+            border-bottom: 2px solid #be3216;
+            width: 50px;
+            display: inline-block;
+            margin-bottom: 5px;
+          }
+        }
       }
     }
   }

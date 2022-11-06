@@ -7,6 +7,7 @@ import vue2Jsx from '@vitejs/plugin-vue2-jsx'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/szlinkdong/',
   plugins: [
     vue2(),
     vue2Jsx(),
@@ -15,6 +16,9 @@ export default defineConfig({
       additionalLegacyPolyfills: ['regenerator-runtime/runtime']
     })
   ],
+  build: {
+    outDir: 'docs'
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
