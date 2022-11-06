@@ -4,7 +4,7 @@
     <div class="custom-nav" :class="{'fixed-nav': fixedNav}" >
       <el-breadcrumb separator-class="el-icon-arrow-right">
         <el-breadcrumb-item :to="{ path: '/home' }">主页</el-breadcrumb-item>
-        <el-breadcrumb-item>关于凌动</el-breadcrumb-item>
+        <el-breadcrumb-item>产品中心</el-breadcrumb-item>
       </el-breadcrumb>
       <div>
         <div

@@ -23,10 +23,7 @@
         <el-menu-item index="/product/RFIDdzbq">RFID电子标签</el-menu-item>
       </el-submenu>
       <el-menu-item index="/case">案例展示</el-menu-item>
-      <el-submenu index="/news">
-        <template slot="title">新闻资讯</template>
-        <el-menu-item index="/news/company">公司新闻</el-menu-item>
-      </el-submenu>
+      <el-menu-item index="/news">新闻资讯</el-menu-item>
       <el-menu-item index="/contact">联系我们</el-menu-item>
     </el-menu>
   </div>

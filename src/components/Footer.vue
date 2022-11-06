@@ -2,14 +2,13 @@
   <div class="footer-content">
     <div class="container">
       <h2>联系我们</h2>
-      <!-- <p>苏州凌光自动化科技有限公司</p>
-      <p>邮编：215000</p>
-      <p>手机：18015414418</p>
-      <p>邮箱：alvin.yin@linkguang.com</p>
-      <p>联系人：尹先生</p>
-      <p>地址：苏州工业园区汀兰巷183号</p>
-      <p>© 2020-2023 苏州凌光 备案号：苏ICP备2021054256号</p>
-      <p>苏州凌光自动化科技有限公司</p> -->
+      <p>苏州凌动智能科技有限公司</p>
+      <p>邮编：xxxxxxx</p>
+      <p>手机：xxxxxxxxxxx</p>
+      <p>邮箱：xxxxxxxxxxx</p>
+      <p>联系人：x先生</p>
+      <p>地址：苏州xxxxxxxxx</p>
+      <p>© 2020-2023 苏州凌动 备案号：xxxxxxxxxxx</p>
     </div>
   </div>
 </template>
@@ -26,7 +25,7 @@
   padding: 60px 0;
   margin-top: 60px;
   .container {
-    max-width: 720px;
+    max-width: 1140px;
     padding: 0 30px;
     margin: auto;
     color: #fff;
