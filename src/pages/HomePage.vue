@@ -25,8 +25,8 @@
       </div>
       <div class="about-main-content">
         <div class="text-content">
-          <h2>苏州凌光自动化科技有限公司</h2>
-          <div class="txt">苏州凌光自动化科技有限公司成立于2018年，坐落于美丽的苏州工业园区，是一家专业提供图尔克传感器、伺服压机、RFID电子标签等产品的一站式采购和技术支持的供应商。 公司的优势在于货源直接，库存充足，价格合理，并向广大客户承诺只提供全新原装正品。产品应用领域涵盖：电源管理，工业通信... </div>
+          <h2>苏州凌动xxxxx</h2>
+          <div class="txt">苏州凌动xxxxx成立于2018年，坐落于美丽的苏州工业园区，是一家专业提供图尔克传感器、伺服压机、RFID电子标签等产品的一站式采购和技术支持的供应商。 公司的优势在于货源直接，库存充足，价格合理，并向广大客户承诺只提供全新原装正品。产品应用领域涵盖：电源管理，工业通信... </div>
         </div>
         <div class="img-content">
           <img :src="aboutUsImg" />
@@ -54,9 +54,9 @@
       <div class="news-info">
         <img :src="aboutUsImg" />
         <div class="text-content">
-          <h2>苏州凌光自动化科技有限公司官网上线啦！！！</h2>
+          <h2>苏州凌动xxxxx官网上线啦！！！</h2>
           <div class="date"><span></span>2021-12-18</div>
-          <div class="txt">苏州凌光自动化科技有限公司成立于2018年，坐落于美丽的苏州工业园区，是一家专业提供图尔...</div>
+          <div class="txt">苏州凌动xxxxxx成立于2018年，坐落于美丽的苏州工业园区，是一家专业提供图尔...</div>
         </div>
       </div>
     </div>
