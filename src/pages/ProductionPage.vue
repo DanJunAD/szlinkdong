@@ -45,7 +45,7 @@ export default {
   watch: {
     $route: {
       handler: function(val) {
-        this.currentProduction = val.hash.replace('#', '');
+        this.currentProduction = val.params.type;
       },
       deep: true,
       immediate: true,
@@ -53,7 +53,7 @@ export default {
   },
   methods: {
     changeCurrentProduction(val) {
-      location.hash = '#' + val;
+      location.hash = '#/product/' + val;
     },
   }
 }

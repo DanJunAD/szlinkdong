@@ -19,12 +19,12 @@ const router = new VueRouter({
       component: HomePage,
     },
     {
-      path: '/about',
+      path: '/about/:type',
       name: 'about',
       component: AboutPage,
     },
     {
-      path: '/product',
+      path: '/product/:type',
       name: 'product',
       component: ProductionPage,
     },

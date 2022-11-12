@@ -12,14 +12,14 @@
       <el-menu-item index="/">首页</el-menu-item>
       <el-submenu index="/about">
         <template slot="title">关于凌动</template>
-        <el-menu-item index="/about#introduction">公司简介</el-menu-item>
-        <el-menu-item index="/about#culture">企业文化</el-menu-item>
-        <el-menu-item index="/about#partner">合作伙伴</el-menu-item>
+        <el-menu-item index="/about/introduction">公司简介</el-menu-item>
+        <el-menu-item index="/about/culture">企业文化</el-menu-item>
+        <el-menu-item index="/about/partner">合作伙伴</el-menu-item>
       </el-submenu>
       <el-submenu index="/product">
         <template slot="title">产品中心</template>
-        <el-menu-item index="/product#sfyj">伺服压机</el-menu-item>
-        <el-menu-item index="/product#sfdg">伺服电缸</el-menu-item>
+        <el-menu-item index="/product/sfyj">伺服压机</el-menu-item>
+        <el-menu-item index="/product/sfdg">伺服电缸</el-menu-item>
       </el-submenu>
       <el-menu-item index="/case">案例展示</el-menu-item>
       <el-menu-item index="/news">新闻资讯</el-menu-item>

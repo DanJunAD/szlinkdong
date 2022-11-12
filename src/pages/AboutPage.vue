@@ -98,8 +98,8 @@ export default {
   watch: {
     $route: {
       handler: function(val) {
-        this.currentPosition = val.hash.replace('#', '');
-        window.document.querySelector(val.hash)?.scrollIntoView({
+        this.currentPosition = val.params.type;
+        window.document.querySelector('#' + val.params.type)?.scrollIntoView({
           behavior: "smooth",
           inline: "end",
         });
@@ -116,7 +116,7 @@ export default {
   },
   methods: {
     changeCurrentPosition(val) {
-      location.hash = '#' + val;
+      location.hash = '#/about/' + val;
     },
     onScroll(e) {
       const offsetTop = window.document.querySelector('.custom-nav').getBoundingClientRect().top;
