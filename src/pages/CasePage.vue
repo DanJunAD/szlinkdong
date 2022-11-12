@@ -3,7 +3,7 @@
     <ImgHeader />
     <div class="custom-nav" :class="{'fixed-nav': fixedNav}" >
       <el-breadcrumb separator-class="el-icon-arrow-right">
-        <el-breadcrumb-item :to="{ path: '/home' }">主页</el-breadcrumb-item>
+        <el-breadcrumb-item :to="{ path: '/' }">主页</el-breadcrumb-item>
         <el-breadcrumb-item>案例展示</el-breadcrumb-item>
       </el-breadcrumb>
     </div>

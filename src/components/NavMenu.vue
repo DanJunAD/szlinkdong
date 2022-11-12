@@ -9,7 +9,7 @@
       :default-active="currentPath"
       router
     >
-      <el-menu-item index="/home">首页</el-menu-item>
+      <el-menu-item index="/">首页</el-menu-item>
       <el-submenu index="/about">
         <template slot="title">关于凌动</template>
         <el-menu-item index="/about#introduction">公司简介</el-menu-item>
