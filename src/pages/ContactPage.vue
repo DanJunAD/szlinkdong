@@ -26,6 +26,7 @@ export default {
     }
   },
   mounted() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     this.loadScript();
     window.init = this.init;
   },

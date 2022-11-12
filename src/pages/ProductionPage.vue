@@ -42,6 +42,9 @@ export default {
       currentProduction: '',
     }
   },
+  mounted() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  },
   watch: {
     $route: {
       handler: function(val) {

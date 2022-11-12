@@ -109,6 +109,7 @@ export default {
     }
   },
   mounted() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     window.addEventListener("scroll", this.onScroll)
   },
   beforeDestroy() {

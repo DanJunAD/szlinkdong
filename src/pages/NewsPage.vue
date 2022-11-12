@@ -86,6 +86,9 @@ export default {
       isShowDrawer: false,
     }
   },
+  mounted() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  },
   methods: {
     handleClose() {
       this.isShowDrawer = false;

@@ -87,6 +87,9 @@ export default {
       caseImg: Case1,
     }
   },
+  mounted() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  },
   methods: {
     changeCurrentProduction(val) {
       this.currentProduction = val;
