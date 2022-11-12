@@ -20,13 +20,9 @@
     <div class="about-introduction">
       <img :src="introductionImg" />
       <div class="content">
-        <h2>苏州凌动xxxxx</h2>
+        <h2>苏州凌动智能科技有限公司</h2>
         <div class="txt">
-          苏州凌动xxxxx成立于2018年，坐落于美丽的苏州工业园区，是一家专业提供图尔克传感器、伺服压机、RFID电子标签等产品的一站式采购和技术支持的供应商。
-          <br />
-          公司的优势在于“货源直接，库存充足，价格合理”，并向广大客户承诺只提供全新原装正品。产品应用领域涵盖：电源管理，工业通信，安防，消防火灾，仪器仪表，医疗电源，工业控制器，电力自动化及汽车电子等领域。
-          <br/>
-          公司秉承“诚信，专业，持续发展”的经营理念和“一流品质，一流服务”的发展方针！赢得了广大客户的高度信任和大力支持!
+          苏州凌动智能科技有限公司是一家以伺服电动缸，线性滑台模组，伺服压装机研发生产为主的企业,自成立以来，一直致力于伺服电动缸，线性滑台模组，伺服压装机的高效传动技术的研发。公司产品主要有LD系列伺服电动缸（电动推杆），线性滑台，单轴，两轴，三轴机器人。公司引进国外的先进技术，选用优质的电机、国外品牌轴承、进口丝杠导轨、钢材等材料，并且拥有资深的机械传动设计师，先进的传动设计软件等，确保了产品技术参数的准确性，应用的可靠性。为客户提供操作简便、效率卓越、性能稳定、价格合理的伺服电动缸，线性滑台模组和伺服压装机设备。
         </div>
       </div>
     </div>
@@ -103,7 +99,7 @@ export default {
     $route: {
       handler: function(val) {
         this.currentPosition = val.hash.replace('#', '');
-        window.document.querySelector(val.hash).scrollIntoView({
+        window.document.querySelector(val.hash)?.scrollIntoView({
           behavior: "smooth",
           inline: "end",
         });

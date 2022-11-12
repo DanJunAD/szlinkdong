@@ -3,11 +3,11 @@
     <div class="container">
       <h2>联系我们</h2>
       <p>苏州凌动智能科技有限公司</p>
-      <p>邮编：xxxxxxx</p>
-      <p>手机：xxxxxxxxxxx</p>
-      <p>邮箱：xxxxxxxxxxx</p>
-      <p>联系人：x先生</p>
-      <p>地址：苏州xxxxxxxxx</p>
+      <p>手机：18106217971</p>
+      <p>邮箱：Director.zhang@szlinkdong.com</p>
+      <p>联系人：张先生</p>
+      <p>邮政编码: 215121</p>
+      <p>地址：江苏省苏州市工业园区汀兰巷183号沙湖科技园7A幢</p>
       <p>© 2020-2023 苏州凌动 备案号：xxxxxxxxxxx</p>
     </div>
   </div>

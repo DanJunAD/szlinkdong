@@ -24,7 +24,7 @@ const router = new VueRouter({
       component: AboutPage,
     },
     {
-      path: '/product/:type',
+      path: '/product',
       name: 'product',
       component: ProductionPage,
     },

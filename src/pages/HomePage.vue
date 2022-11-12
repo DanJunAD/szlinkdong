@@ -25,8 +25,8 @@
       </div>
       <div class="about-main-content">
         <div class="text-content">
-          <h2>苏州凌动xxxxx</h2>
-          <div class="txt">苏州凌动xxxxx成立于2018年，坐落于美丽的苏州工业园区，是一家专业提供图尔克传感器、伺服压机、RFID电子标签等产品的一站式采购和技术支持的供应商。 公司的优势在于货源直接，库存充足，价格合理，并向广大客户承诺只提供全新原装正品。产品应用领域涵盖：电源管理，工业通信... </div>
+          <h2>苏州凌动智能科技有限公司</h2>
+          <div class="txt">苏州凌动智能科技有限公司是一家以伺服电动缸，线性滑台模组，伺服压装机研发生产为主的企业,自成立以来，一直致力于伺服电动缸，线性滑台模组，伺服压装机的高效传动技术的研发。公司产品主要有LD系列伺服电动缸（电动推杆），线性滑台，单轴，两轴，三轴机器人。公司引进国外的先进技术，选用优质的电机、国外品牌轴承、进口丝杠导轨、钢材等材料，并且拥有资深的机械传动设计师，先进的传动设计软件等，确保了产品技术参数的准确性，应用的可靠性。为客户提供操作简便、效率卓越、性能稳定、价格合理的伺服电动缸，线性滑台模组和伺服压装机设备。</div>
         </div>
         <div class="img-content">
           <img :src="aboutUsImg" />
@@ -41,8 +41,8 @@
       <div class="case-info">
         <img :src="caseImg" />
         <div class="text-content">
-          <h2>TBPN直接在机械手的真空夹具上处理安全、标准和IO-Link信号</h2>
-          <div class="txt">在汽车行业车身制造中使用的压机上，经常由机械手使用真空夹具来移进和移出处理过程中的钣金部件。为此，必须使用压力开关等传感器来可靠监测真空夹具的压力，因为若未检测到相关的压降，压机附近的人员就可能面临风险。此外，钣金部件的末端位置也需监测，这样... </div>
+          <h2>数控伺服压装机案例</h2>
+          <div class="txt">苏州凌动，专注于伺服电动缸、线性滑台模组、伺服压机、三自由度、六自由度等产品的生产研发，10精密仪器生产销售，有专业的设备，良好的电机、品牌轴承、进口丝杆、钢材等配件...</div>
         </div>
       </div>
     </div>
@@ -54,9 +54,8 @@
       <div class="news-info">
         <img :src="aboutUsImg" />
         <div class="text-content">
-          <h2>苏州凌动xxxxx官网上线啦！！！</h2>
-          <div class="date"><span></span>2021-12-18</div>
-          <div class="txt">苏州凌动xxxxxx成立于2018年，坐落于美丽的苏州工业园区，是一家专业提供图尔...</div>
+          <h2>苏州凌动智能科技有限公司官网上线啦！！！</h2>
+          <div class="date">2022-11-12</div>
         </div>
       </div>
     </div>
@@ -69,7 +68,7 @@ import SlideHeader from '../components/SlideHeader.vue';
 import Footer from '../components/Footer.vue';
 import ProductionCards from '../components/ProductionCards.vue';
 import AboutUsImg from '@/assets/about-us.jpg';
-import HomeCaseImg from '@/assets/home-case.jpg';
+import Case1 from '@/assets/case-1.png';
 
 export default {
   components: {
@@ -80,13 +79,12 @@ export default {
   data() {
     return {
       productionList: [
-        { value: 'tekcgq', label: '图尔克传感器'},
         { value: 'sfyj', label: '伺服压机'},
-        { value: 'RFIDdzbq', label: 'RFID电子标签'},
+        { value: 'sfdg', label: '伺服电缸'},
       ],
-      currentProduction: 'tekcgq',
+      currentProduction: 'sfyj',
       aboutUsImg: AboutUsImg,
-      caseImg: HomeCaseImg,
+      caseImg: Case1,
     }
   },
   methods: {
@@ -200,6 +198,7 @@ export default {
           line-height: 26px;
           margin-top: 25px;
           font-size: 14px;
+          text-align: justify;
         }
       }
       .img-content {
@@ -248,6 +247,9 @@ export default {
       margin: 30px 60px;
       img {
         flex: 1 1;
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
       }
       .text-content {
         flex: 2 1;
@@ -290,14 +292,15 @@ export default {
     }
     .news-info {
       background-color: #f0f0f0;
-      width: 80%;
+      width: 550px;
       margin: 30px auto;
       display: flex;
       flex-direction: column;
       padding: 50px;
       align-items: center;
       img {
-        width: 100%;
+        width: 500px;
+        height: 350px;
         object-fit: contain;
       }
       .text-content {
@@ -310,14 +313,7 @@ export default {
         .date {
           font-size: 14px;
           color: #292828;
-          span {
-            border-bottom: 1px dotted #000000;
-            width: 80%;
-            height: 1px;
-            display: inline-block;
-            margin-bottom: 5px;
-            margin-right: 20px;
-          }
+          text-align: right;
         }
         .txt {
           font-size: 14px;
