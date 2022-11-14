@@ -247,7 +247,8 @@ export default {
     }
     .case-info {
       display: flex;
-      margin: 30px 60px;
+      margin: 30px auto;
+      max-width: 1140px;
       img {
         flex: 1 1;
         width: 300px;
