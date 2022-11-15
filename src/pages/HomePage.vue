@@ -68,7 +68,7 @@ import SlideHeader from '../components/SlideHeader.vue';
 import Footer from '../components/Footer.vue';
 import ProductionCards from '../components/ProductionCards.vue';
 import AboutUsImg from '@/assets/about-us.jpg';
-import Case1 from '@/assets/case-1.png';
+import case6 from '@/assets/case-y6.jpeg';
 
 export default {
   components: {
@@ -84,7 +84,7 @@ export default {
       ],
       currentProduction: 'sfyj',
       aboutUsImg: AboutUsImg,
-      caseImg: Case1,
+      caseImg: case6,
     }
   },
   mounted() {
