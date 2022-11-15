@@ -28,7 +28,16 @@ import sfyj2 from '@/assets/sfyj-2.png';
 import sfyj3 from '@/assets/sfyj-3.png';
 import sfdg1 from '@/assets/sfdg-1.png';
 import sfdg2 from '@/assets/sfdg-2.png';
-import case1 from '@/assets/case-1.png';
+import case1 from '@/assets/case-y1.jpeg';
+import case2 from '@/assets/case-y2.jpeg';
+import case3 from '@/assets/case-y3.jpeg';
+import case4 from '@/assets/case-y4.jpeg';
+import case5 from '@/assets/case-y5.jpeg';
+import case6 from '@/assets/case-y6.jpeg';
+import case7 from '@/assets/case-y7.jpeg';
+import dg11 from '@/assets/dg1-1.jpeg';
+import dg21 from '@/assets/dg2-1.jpeg';
+import dg22 from '@/assets/dg2-1.jpeg';
 
 export default {
   props: ['productionType'],
@@ -64,20 +73,21 @@ export default {
           img: sfdg1,
           name: '直线式',
           content: [
-            { type: 'text', content: '这里放产品介绍' },
+            { type: 'img', content: dg11 },
           ]
         },
         {
           img: sfdg2,
           name: '折返式',
           content: [
-            { type: 'text', content: '这里放产品介绍' },
+            { type: 'img', content: dg21 },
+            { type: 'img', content: dg22 },
           ]
         },
       ],
       case_list: [
         {
-          img: case1,
+          img: case6,
           name: '数控伺服压装机案例',
           content: [
             { type: 'img', content: case1 },
@@ -88,6 +98,12 @@ export default {
             { type: 'text', content: '3、用于压、伸力测试系统。' },
             { type: 'text', content: '4、金属或非金属零件的压印、成型、浅拉深、整形及压力装配等 眼镜、五金制品压制。' },
             { type: 'text', content: '5、可压制的产品有表壳、眼镜、手机制品、餐具、标牌、首饰，零件等的压制。' },
+            { type: 'img', content: case2 },
+            { type: 'img', content: case3 },
+            { type: 'img', content: case4 },
+            { type: 'img', content: case5 },
+            { type: 'img', content: case6 },
+            { type: 'img', content: case7 },
           ]
         },
       ],

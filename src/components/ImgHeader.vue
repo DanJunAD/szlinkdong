@@ -2,7 +2,7 @@
   <div class="header-img-content">
     <img class="header-img" :src="headerImg" />
     <div class="banner-text">
-      <h2>工控产品一站式服务</h2>
+      <h2>工业自动化一站式服务</h2>
       <h3>苏州凌动智能科技有限公司</h3>
     </div>
   </div>

@@ -23,13 +23,12 @@
 <script>
 import Banner1 from '@/assets/banner1.jpeg';
 import Banner2 from '@/assets/banner2.jpeg';
-import Banner3 from '@/assets/banner3.jpeg';
 export default {
   data() {
     return {
       contentHeight: '',
       currentImgIndex: 0,
-      imgList: [Banner1, Banner2, Banner3],
+      imgList: [Banner1, Banner2],
     }
   },
   mounted() {
